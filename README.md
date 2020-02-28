@@ -4,8 +4,8 @@
 • apt upgrade
 • apt install git
 • git clone https://github.com/Monika-mp3/spamer
-• sh spymer/install.sh
-• spymer
+• sh spamer/install.sh
+• spamer
 
 
 
