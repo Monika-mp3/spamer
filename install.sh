@@ -18,7 +18,7 @@ then
 	pkg install dos2unix
 	pip3 install requests
 	pip3 install colorama
-	cp ~/spamer/spammer.py /data/data/com.termux/files/usr/bin/spamer
+	cp ~/spamer/spamer.py /data/data/com.termux/files/usr/bin/spamer
 	dos2unix /data/data/com.termux/files/usr/bin/spamer
 	chmod 777 /data/data/com.termux/files/usr/bin/spamer
 	spamer
