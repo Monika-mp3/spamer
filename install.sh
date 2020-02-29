@@ -3,11 +3,11 @@ clear
 echo "--------------------"
 echo "|	 Кто ты ?	 |"
 echo "|------------------|"
-echo "| 1. Termux		|"
+echo "| 1. Termux        |"
 echo "| 2. Другой Unix   |"
-echo "| 3. iSH		   |"
-echo "|				  |"
-echo "| Введите 1/2/3:   |"
+echo "| 3. iSH		 |"
+echo "|			 |"
+echo "|  Введите 1/2/3:  |"
 echo "--------------------"
 read numb
 if [ $numb = "1" ]
@@ -51,7 +51,7 @@ else
 			chmod 777 /usr/bin/spamer
 			spamer
 		else
-			if [ $numb = "1" ]
+			if [ $numb = "q" ]
 			then
 				pkg install python
 				pkg install python3
