@@ -1,12 +1,12 @@
 #!/bin/bash
 clear
 echo "--------------------"
-echo "|	 Кто ты ?	 |"
+echo "|	 Кто ты ?        |"
 echo "|------------------|"
 echo "| 1. Termux        |"
 echo "| 2. Другой Unix   |"
-echo "| 3. iSH		 |"
-echo "|			 |"
+echo "| 3. iSH	         |"
+echo "|	                 |"
 echo "|  Введите 1/2/3:  |"
 echo "--------------------"
 read numb
