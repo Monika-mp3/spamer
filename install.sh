@@ -1,12 +1,12 @@
 #!/bin/bash
 clear
 echo "--------------------"
-echo "| Кто ты по жизни? |"
+echo "|	 Кто ты ?	 |"
 echo "|------------------|"
-echo "| 1. Termux        |"
+echo "| 1. Termux		|"
 echo "| 2. Другой Unix   |"
-echo "| 3. iSH           |"
-echo "|                  |"
+echo "| 3. iSH		   |"
+echo "|				  |"
 echo "| Введите 1/2/3:   |"
 echo "--------------------"
 read numb
@@ -51,7 +51,21 @@ else
 			chmod 777 /usr/bin/spamer
 			spamer
 		else
-			echo "Некорректный ввод"
+			if [ $numb = "1" ]
+			then
+				pkg install python
+				pkg install python3
+				pkg install python3-pip
+				pkg install dos2unix
+				pip3 install requests
+				pip3 install colorama
+				cp ~/spamer/spamer.py /data/data/com.termux/files/usr/bin/spamer
+				dos2unix /data/data/com.termux/files/usr/bin/spamer
+				chmod 777 /data/data/com.termux/files/usr/bin/spamer
+				spamer
+			else
+				echo "Некорректный ввод"
+			fi
 		fi
 	fi
 fi
